@@ -11,6 +11,6 @@ target_include_directories(pnk-basic-semaphore INTERFACE inc)
 target_include_directories(pnk-basic-semaphore INTERFACE lib)
 target_compile_features   (pnk-basic-semaphore INTERFACE c_std_11)
 
-add_executable(init_test tests/init_test.c ${library-source})
+add_executable(initial_test tests/initial_test.c ${library-source})
 
-target_link_libraries(init_test PRIVATE pnk-basic-semaphore)
+target_link_libraries(initial_test PRIVATE pnk-basic-semaphore)
